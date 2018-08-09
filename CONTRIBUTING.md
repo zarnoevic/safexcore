@@ -69,6 +69,7 @@ The "Safex Maintainer Team" is defined in this document as the following users:
 - Daniel Dubek
 - Marko Atanasievski
 - Igor Janosev
+- Stefan Crnojevic
 
 ## Goals
 
