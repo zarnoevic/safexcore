@@ -57,6 +57,7 @@ set(unit_tests_sources
   mul_div.cpp
   multisig.cpp
   parse_amount.cpp
+  random.cpp
   serialization.cpp
   sha256.cpp
   slow_memmem.cpp
@@ -70,7 +71,8 @@ set(unit_tests_sources
   varint.cpp
   ringct.cpp
   output_selection.cpp
-  vercmp.cpp)
+  vercmp.cpp
+  ringdb.cpp)
 
 set(unit_tests_headers
   unit_tests_utils.h)

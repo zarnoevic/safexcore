@@ -1,4 +1,4 @@
-// Copyright (c) 2018, The Safex Project
+// Copyright (c) 2018, The Monero Project
 // 
 // All rights reserved.
 // 
@@ -25,40 +25,23 @@
 // INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 // STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-// 
-// Parts of this file are originally copyright (c) 2012-2013 The Cryptonote developers
-// Parts of this file are originally copyright (c) 2014-2018 The Monero Project
 
-#pragma once
+#include "gtest/gtest.h"
 
-#if defined(__GNUC__)
-#if defined(__sun) && defined(__SVR4)
-#define INITIALIZER(name) __attribute__((constructor)) static void name(void)
-#define FINALIZER(name) __attribute__((destructor)) static void name(void)
-#else
-#define INITIALIZER(name) __attribute__((constructor(101))) static void name(void)
-#define FINALIZER(name) __attribute__((destructor(101))) static void name(void)
-#endif
-#define REGISTER_FINALIZER(name) ((void) 0)
+#include "crypto/crypto.h"
 
-#elif defined(_MSC_VER)
-#include <assert.h>
-#include <stdlib.h>
-// https://stackoverflow.com/questions/1113409/attribute-constructor-equivalent-in-vc
-// https://msdn.microsoft.com/en-us/library/bb918180.aspx
-#pragma section(".CRT$XCT", read)
-#define INITIALIZER(name) \
-  static void __cdecl name(void); \
-  __declspec(allocate(".CRT$XCT")) void (__cdecl *const _##name)(void) = &name; \
-  static void __cdecl name(void)
-#define FINALIZER(name) \
-  static void __cdecl name(void)
-#define REGISTER_FINALIZER(name) \
-  do { \
-    int _res = atexit(name); \
-    assert(_res == 0); \
-  } while (0);
+extern "C" {
+#include "crypto/crypto-ops.h"
+}
 
-#else
-#error Unsupported compiler
-#endif
+TEST(random32_unbiased, less_than_order)
+{
+  unsigned char tmp[32], tmp2[32];
+  for (int i = 0; i < 1000; ++i)
+  {
+    crypto::random32_unbiased(tmp);
+    memcpy(tmp2, tmp, 32);
+    sc_reduce32(tmp2);
+    ASSERT_EQ(memcmp(tmp, tmp2, 32), 0);
+  }
+}
