@@ -1,0 +1,407 @@
+mkdir -p build/debug
+cd build/debug && cmake -D BUILD_TESTS=ON -D BUILD_SHARED_LIBS=OFF -D CMAKE_BUILD_TYPE=Debug ../.. && make
+-- Building without build tag
+-- Could not find DEVELOPER_LOCAL_TOOLS in env (not required)
+-- BOOST_IGNORE_SYSTEM_PATHS defaults to OFF
+-- Could not find DEVELOPER_LIBUNBOUND_OLD in env (not required)
+-- Building for a 64-bit system
+-- Building internal libraries as static
+-- Could not find DATABASE in env (not required unless you want to change database type from default: lmdb)
+-- Using LMDB as default DB type
+-- Stack trace on exception enabled (using easylogging++)
+-- Using OpenSSL include dir at /usr/include
+-- Found miniupnpc API version 10
+-- Using in-tree miniupnpc
+-- Looking for libunbound
+-- Found libunbound include (unbound.h) in /usr/include
+-- Found libunbound shared library
+-- Using 64-bit LMDB from source tree
+-- Building on x86_64 for native
+-- Using C security hardening flags:  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong
+-- Using C++ security hardening flags:  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong
+-- Using linker security hardening flags:  -pie -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+-- AES support enabled
+-- Found Boost Version: 106501
+-- Found readline library at: /usr
+-- Found Git: /usr/bin/git
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_MAIN_LIBRARY) 
+-- GTest not found on the system: will use GTest bundled with this source
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/osboxes/safexcore/build/debug
+make[1]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[2]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[  1%] Built target lmdb
+[  0%] Built target easylogging
+[  3%] Built target generate_translations_header
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[  7%] Built target libminiupnpc-static
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[  8%] Built target genversion
+[ 11%] Built target obj_common
+[ 18%] Built target obj_cncrypto
+[ 21%] Built target obj_ringct_basic
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 23%] Built target blocks
+[ 22%] Built target obj_ringct
+[ 24%] Built target obj_device
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 24%] Built target obj_checkpoints
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 25%] Built target obj_multisig
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 25%] Building CXX object src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/lmdb/db_lmdb.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 26%] Building CXX object src/cryptonote_core/CMakeFiles/obj_cryptonote_core.dir/blockchain.cpp.o
+[ 26%] Building CXX object src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/miner.cpp.o
+Scanning dependencies of target obj_mnemonics
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 26%] Building CXX object src/mnemonics/CMakeFiles/obj_mnemonics.dir/electrum-words.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 27%] Built target obj_blockchain_db
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_daemon_rpc_server
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 27%] Building CXX object src/rpc/CMakeFiles/obj_daemon_rpc_server.dir/daemon_handler.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 27%] Built target obj_mnemonics
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_rpc_base
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 28%] Building CXX object src/rpc/CMakeFiles/obj_rpc_base.dir/rpc_args.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 30%] Built target obj_rpc_base
+[ 30%] Built target obj_cryptonote_basic
+[ 30%] Building CXX object src/rpc/CMakeFiles/obj_daemon_rpc_server.dir/zmq_server.cpp.o
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_rpc
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 30%] Building CXX object src/rpc/CMakeFiles/obj_rpc.dir/core_rpc_server.cpp.o
+[ 30%] Building CXX object src/rpc/CMakeFiles/obj_rpc.dir/instanciations.cpp.o
+[ 30%] Building CXX object src/cryptonote_core/CMakeFiles/obj_cryptonote_core.dir/cryptonote_core.cpp.o
+[ 30%] Building CXX object src/cryptonote_core/CMakeFiles/obj_cryptonote_core.dir/tx_pool.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 30%] Built target obj_daemon_rpc_server
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_p2p
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 30%] Building CXX object src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.o
+[ 31%] Building CXX object src/cryptonote_core/CMakeFiles/obj_cryptonote_core.dir/cryptonote_tx_utils.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 31%] Built target obj_p2p
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_cryptonote_protocol
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 31%] Building CXX object src/cryptonote_protocol/CMakeFiles/obj_cryptonote_protocol.dir/block_queue.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 31%] Built target obj_cryptonote_core
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_daemon_messages
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 32%] Building CXX object src/rpc/CMakeFiles/obj_daemon_messages.dir/message.cpp.o
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_serialization
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 32%] Building CXX object src/serialization/CMakeFiles/obj_serialization.dir/json_object.cpp.o
+[ 32%] Building CXX object src/cryptonote_protocol/CMakeFiles/obj_cryptonote_protocol.dir/cryptonote_protocol_handler-base.cpp.o
+[ 32%] Building CXX object src/rpc/CMakeFiles/obj_daemon_messages.dir/daemon_messages.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 32%] Built target obj_serialization
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_wallet
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 32%] Building CXX object src/wallet/CMakeFiles/obj_wallet.dir/wallet.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 32%] Built target obj_daemon_messages
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target obj_daemonizer
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 33%] Building CXX object src/daemonizer/CMakeFiles/obj_daemonizer.dir/posix_fork.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 33%] Built target obj_daemonizer
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 35%] Built target googletest
+[ 35%] Building CXX object src/wallet/CMakeFiles/obj_wallet.dir/wallet_args.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 36%] Building CXX object src/wallet/CMakeFiles/obj_wallet.dir/ringdb.cpp.o
+[ 36%] Built target obj_cryptonote_protocol
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target epee
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 37%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/hex.cpp.o
+[ 37%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/http_auth.cpp.o
+[ 37%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/mlog.cpp.o
+[ 38%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/net_utils_base.cpp.o
+[ 38%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/string_tools.cpp.o
+[ 38%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/wipeable_string.cpp.o
+[ 40%] Building C object contrib/epee/src/CMakeFiles/epee.dir/memwipe.c.o
+[ 40%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/connection_basic.cpp.o
+[ 40%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/network_throttle.cpp.o
+[ 41%] Building CXX object contrib/epee/src/CMakeFiles/epee.dir/network_throttle-detail.cpp.o
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target epee_readline
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 41%] Building CXX object contrib/epee/src/CMakeFiles/epee_readline.dir/readline_buffer.cpp.o
+[ 41%] Linking CXX static library libepee.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 41%] Built target epee
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 42%] Linking CXX static library libepee_readline.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 42%] Built target epee_readline
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 42%] Linking CXX static library libcncrypto.a
+Scanning dependencies of target obj_version
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 43%] Building CXX object src/CMakeFiles/obj_version.dir/__/version.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 43%] Built target obj_version
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 44%] Linking CXX static library libmnemonics.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 44%] Built target cncrypto
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target http-client_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 44%] Building CXX object tests/fuzz/CMakeFiles/http-client_fuzz_tests.dir/http-client.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 44%] Built target mnemonics
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target parse-url_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 45%] Building CXX object tests/fuzz/CMakeFiles/parse-url_fuzz_tests.dir/parse_url.cpp.o
+[ 45%] Building CXX object tests/fuzz/CMakeFiles/parse-url_fuzz_tests.dir/fuzzer.cpp.o
+[ 45%] Building CXX object tests/fuzz/CMakeFiles/http-client_fuzz_tests.dir/fuzzer.cpp.o
+[ 45%] Linking CXX executable parse-url_fuzz_tests
+[ 46%] Linking CXX executable http-client_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 46%] Built target parse-url_fuzz_tests
+[ 46%] Built target http-client_fuzz_tests
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 46%] Building CXX object src/wallet/CMakeFiles/obj_wallet.dir/node_rpc_proxy.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 46%] Linking CXX static library libversion.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 46%] Built target version
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 46%] Linking CXX static library libcommon.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 46%] Built target common
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Linking CXX static library libringct_basic.a
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Linking CXX static library libcheckpoints.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Built target ringct_basic
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Linking CXX static library librpc_base.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Built target checkpoints
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Linking CXX static library libdaemonizer.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Built target rpc_base
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Built target daemonizer
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target base58_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 47%] Building CXX object tests/fuzz/CMakeFiles/base58_fuzz_tests.dir/base58.cpp.o
+Scanning dependencies of target load-from-binary_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 48%] Building CXX object tests/fuzz/CMakeFiles/load-from-binary_fuzz_tests.dir/load_from_binary.cpp.o
+[ 48%] Building CXX object tests/fuzz/CMakeFiles/base58_fuzz_tests.dir/fuzzer.cpp.o
+[ 48%] Linking CXX executable base58_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 48%] Built target base58_fuzz_tests
+[ 48%] Building CXX object tests/fuzz/CMakeFiles/load-from-binary_fuzz_tests.dir/fuzzer.cpp.o
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target load-from-json_fuzz_tests
+[ 48%] Linking CXX executable load-from-binary_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 49%] Building CXX object tests/fuzz/CMakeFiles/load-from-json_fuzz_tests.dir/load_from_json.cpp.o
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 49%] Built target load-from-binary_fuzz_tests
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target levin_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 49%] Building CXX object tests/fuzz/CMakeFiles/levin_fuzz_tests.dir/levin.cpp.o
+[ 49%] Building CXX object tests/fuzz/CMakeFiles/load-from-json_fuzz_tests.dir/fuzzer.cpp.o
+[ 49%] Linking CXX executable load-from-json_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 49%] Built target load-from-json_fuzz_tests
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target cncrypto-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 50%] Building C object tests/crypto/CMakeFiles/cncrypto-tests.dir/crypto-ops-data.c.o
+[ 50%] Building C object tests/crypto/CMakeFiles/cncrypto-tests.dir/crypto-ops.c.o
+[ 50%] Building CXX object tests/crypto/CMakeFiles/cncrypto-tests.dir/crypto.cpp.o
+[ 50%] Building CXX object tests/fuzz/CMakeFiles/levin_fuzz_tests.dir/fuzzer.cpp.o
+[ 51%] Building C object tests/crypto/CMakeFiles/cncrypto-tests.dir/hash.c.o
+[ 52%] Linking CXX executable levin_fuzz_tests
+[ 52%] Building CXX object tests/crypto/CMakeFiles/cncrypto-tests.dir/main.cpp.o
+[ 52%] Building C object tests/crypto/CMakeFiles/cncrypto-tests.dir/random.c.o
+[ 53%] Linking CXX executable cncrypto-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 53%] Built target levin_fuzz_tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 53%] Built target cncrypto-tests
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 54%] Linking CXX static library libdevice.a
+Scanning dependencies of target hash-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 54%] Building CXX object tests/hash/CMakeFiles/hash-tests.dir/main.cpp.o
+[ 55%] Linking CXX executable hash-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 55%] Built target hash-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 55%] Built target device
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 55%] Linking CXX static library libcryptonote_basic.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 55%] Built target cryptonote_basic
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 55%] Linking CXX static library libringct.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 55%] Built target ringct
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 55%] Linking CXX static library libmultisig.a
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 56%] Linking CXX static library libblockchain_db.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 56%] Built target multisig
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 56%] Built target blockchain_db
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 56%] Linking CXX static library libcryptonote_core.a
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 56%] Built target cryptonote_core
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 56%] Linking CXX static library libp2p.a
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target hash-target-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 57%] Building CXX object tests/CMakeFiles/hash-target-tests.dir/hash-target.cpp.o
+[ 57%] Linking CXX executable hash-target-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 57%] Built target p2p
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 57%] Built target hash-target-tests
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target difficulty-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 57%] Building CXX object tests/difficulty/CMakeFiles/difficulty-tests.dir/difficulty.cpp.o
+Scanning dependencies of target net_load_tests_srv
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 57%] Building CXX object tests/net_load_tests/CMakeFiles/net_load_tests_srv.dir/srv.cpp.o
+[ 57%] Linking CXX executable difficulty-tests
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 57%] Built target difficulty-tests
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+Scanning dependencies of target net_load_tests_clt
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+make[3]: Entering directory '/home/osboxes/safexcore/build/debug'
+[ 57%] Building CXX object tests/net_load_tests/CMakeFiles/net_load_tests_clt.dir/clt.cpp.o
+src/wallet/CMakeFiles/obj_wallet.dir/build.make:62: recipe for target 'src/wallet/CMakeFiles/obj_wallet.dir/wallet.cpp.o' failed
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+CMakeFiles/Makefile2:2185: recipe for target 'src/wallet/CMakeFiles/obj_wallet.dir/all' failed
+[ 58%] Linking CXX executable net_load_tests_clt
+[ 57%] Linking CXX executable net_load_tests_srv
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 58%] Built target net_load_tests_srv
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 58%] Built target net_load_tests_clt
+make[3]: Leaving directory '/home/osboxes/safexcore/build/debug'
+[ 58%] Built target obj_rpc
+make[2]: Leaving directory '/home/osboxes/safexcore/build/debug'
+Makefile:140: recipe for target 'all' failed
+make[1]: Leaving directory '/home/osboxes/safexcore/build/debug'
+Makefile:47: recipe for target 'debug-all' failed
